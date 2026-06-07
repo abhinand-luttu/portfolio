@@ -239,26 +239,23 @@ footer{
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 768px) {
 
-/* Small Mobile */
-@media (max-width: 480px) {
-
-    .hero h1 {
-        font-size: 30px;
+    .hero {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .section-title {
-        font-size: 22px;
+    .hero-left {
+        order: 2;   /* text goes below */
     }
 
-    .card {
-        padding: 18px;
-    }
-
-    .btn {
-        width: 100%;
+    .hero img {
+        order: 1;   /* image goes on top */
+        margin-bottom: 15px;
     }
 }
+
 </style>
 </head>
 
